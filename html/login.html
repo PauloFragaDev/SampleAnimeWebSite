@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="author" content="Paulo">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="../css/login.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/Imagenes/logoMWhite.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="encabezado">
+        <h1>Login :</h1>
+    </div>
+    <div class="login">
+        <form onsubmit="loginFunc()">
+            <label class="label" for="username">Username</label> <br>
+            <input class="input" type="text" name="username" id="username" required><br>
+            <label class="label" for="password">Password</label><br>
+            <input class="input" minlength="4" maxlength="10" type="password" name="password" id="password"
+                required><br>
+            <button class="btnSubmit" type="submit">Login</button>
+        </form>
+        <button class="btnSubmit" onclick="location.href='registro.html'">Registro</button>
+
+    </div>
+
+    <script src="localstorage.js"></script>
+</body>
+
+</html>

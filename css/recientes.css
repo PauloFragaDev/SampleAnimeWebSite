@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    text-align: center;
+    background-color: #535353;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #960000;
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-corner{
+    background: transparent;
+}
+
+header{
+    background-color: black;
+    width: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+	margin-bottom: 20px;
+	width: 100%;
+    height: 150px;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../imagenes/bannerKimi1.jpg);
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+aside{
+    margin: auto;
+    width: 22%;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #272A2C;
+}
+
+li:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    height: 150px;
+}
+
+.tituloPagina{
+    flex: auto;
+    color: inherit;
+    font-size: 64px;
+    margin-top: 25px;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+
+
+.navbar{
+    width: 90%;
+    margin-right: 25px;
+    margin-left: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    margin-top: 35px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #960000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+
+.imagen{
+    width: 100%;
+    height: 75%;
+}
+
+.container{
+    display: flex;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.animes{
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "anime1 anime2 anime3 anime4 anime5 anime6 anime7"
+    "anime8 anime9 anime10 anime11 anime12 anime13 anime14";
+}
+
+.anime1, .anime2, .anime3, .anime4, .anime5, .anime6, .anime7, .anime8, .anime9, .anime10, .anime11, .anime12, .anime13, .anime14{
+    margin: 5px;
+    height: auto;
+    width: auto;
+    grid-area: anime1;
+    grid-area: anime2;
+    grid-area: anime3;
+    grid-area: anime4;
+    grid-area: anime5;
+    grid-area: anime6;
+}
+
+.anime1 { grid-area: anime1; }
+.anime2 { grid-area: anime2; }
+.anime3 { grid-area: anime3; }
+.anime4 { grid-area: anime4; }
+.anime5 { grid-area: anime5; }
+.anime6 { grid-area: anime6; }
+.anime7 { grid-area: anime7; }
+.anime8 { grid-area: anime8; }
+.anime9 { grid-area: anime9; }
+.anime10 { grid-area: anime10; }
+.anime11 { grid-area: anime11; }
+.anime12 { grid-area: anime12; }
+.anime13 { grid-area: anime13; }
+.anime14 { grid-area: anime14; }
+
+.portadaAnime{
+    width: 200px;
+    height: 300px;
+}
+
+.aside{
+    flex-direction: row;
+}
+.imagenAside{
+    height: 100%;
+    width: 100%;
+}
+
+.imagen2{
+    transform: scaleX(-1);
+    height: 650px;
+    width: 400px;
+    border: 3px solid indigo;
+}
+
+.letraTitulo{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer{
+    bottom: 0;
+}
+
+.textoblockquote{
+    color: inherit;
+}

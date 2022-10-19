@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url(/imagenes/error.gif);
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+header{
+    background-color: black;
+    height: 200px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #272A2C;
+}
+
+.container{
+    width: 1000px;
+    height: 500px;
+}
+
+.navbar{
+    width: 90%;
+    margin-right: 25px;
+    margin-left: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    margin-top: 35px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #960000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}

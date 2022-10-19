@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/imagenes/wallpaper.png);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar{
+    height: 150px;
+    width: 90%;
+    margin-right: 25px;
+    margin-left: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    margin-top: 35px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #960000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.formulario{
+    color: #fff;
+    border: 2px solid #fff;
+    background-image: url(/imagenes/mantenimiento.gif);
+    margin: 150px auto;
+    height: 500px;
+    width: 1000px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: large;
+}
+
+textarea{
+    text-align: center;
+    border-radius: 10px;
+    border-color: #960000;
+    background-color: transparent ;
+    color: bisque;
+}
+
+input{
+    text-align: center;
+    border-radius: 10px;
+    border-color: #960000;
+    background-color: transparent ;
+    color: bisque;
+}
+
+.choice{
+    margin-left: 425px;
+    margin-bottom: 10px;
+    text-align: left;
+}
